@@ -10,7 +10,7 @@ spark = SparkSession.builder.appName("LoanPrediction").getOrCreate()
 @st.cache_resource
 def load_rf_model():
     # Load the RandomForest model from the specified path
-    return RandomForestClassificationModel.load(r"E:\Class\sem3\big data framework\Project\rf_model")
+    return RandomForestClassificationModel.load(r"rf_model")
 
 @st.cache_resource
 def get_vector_assembler():
