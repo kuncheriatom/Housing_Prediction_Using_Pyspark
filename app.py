@@ -56,16 +56,16 @@ def main():
     # Define input fields with better descriptions
     st.header("Input Loan Application Data")
     
-    BASEMENTAREA_MODE = st.number_input("Basement Area (in square meters)", value=10.0)
-    NONLIVINGAREA_AVG = st.number_input("Average Non-Living Area (in square meters)", value=60.0)
-    APARTMENTS_MODE = st.number_input("Number of Apartments", value=3.0)
+    BASEMENTAREA_MODE = st.number_input("Basement Area (in square meters)")
+    NONLIVINGAREA_AVG = st.number_input("Average Non-Living Area (in square meters)")
+    APARTMENTS_MODE = st.number_input("Number of Apartments")
     LIVE_REGION_NOT_WORK_REGION = st.selectbox("Region Type", [0.0, 1.0], format_func=lambda x: "Working Area" if x == 0.0 else "Non-Working Area")
     CODE_GENDER_index = st.selectbox("Gender", [0.0, 1.0], format_func=lambda x: "Male" if x == 0.0 else "Female")
-    REGION_POPULATION_RELATIVE = st.number_input("Relative Population of Region", value=0.02)
+    REGION_POPULATION_RELATIVE = st.number_input("Relative Population of Region")
     FLAG_DOCUMENT_17 = st.selectbox("Document 17 Missing", [0.0, 1.0], format_func=lambda x: "No" if x == 0.0 else "Yes")
-    ELEVATORS_AVG = st.number_input("Average Number of Elevators", value=2.0)
-    REQUESTED_GOODS_PRICE = st.number_input("Requested Loan Price (in currency)", value=500000.0)
-    EXTERNAL_CREDIT_SCORE = st.number_input("External Credit Score", value=0.7)
+    ELEVATORS_AVG = st.number_input("Average Number of Elevators")
+    REQUESTED_GOODS_PRICE = st.number_input("Requested Loan Price (in currency)")
+    EXTERNAL_CREDIT_SCORE = st.number_input("External Credit Score")
     
     # Collect input data
     input_data = {
